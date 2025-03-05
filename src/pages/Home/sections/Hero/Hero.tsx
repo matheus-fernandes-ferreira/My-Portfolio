@@ -1,10 +1,16 @@
 import avatar from "../../../../assets/images/avatar.png";
+import theme from "../../../../theme";
+import StyledButton from "../../../../components/StyledButton/StyledButton";
 
 import { Container, styled, Typography } from "@mui/material";
 import Grid from '@mui/material/Grid2';
-import CloudDownloadIcon from '@mui/icons-material/CloudDownload'; import EmailIcon from '@mui/icons-material/Email';
-import theme from "../../../../theme";
-import StyledButton from "../../../../components/StyledButton/StyledButton";
+
+// icons
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload'; 
+import EmailIcon from '@mui/icons-material/Email';
+
+
+
 const Hero = () => {
     const StyledHero = styled("div")(() => ({
         backgroundColor: theme.palette.primary.dark,

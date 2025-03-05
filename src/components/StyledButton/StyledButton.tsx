@@ -1,8 +1,12 @@
 import { colors, styled } from "@mui/material"
 import theme from "../../theme"
+import { ReactNode } from "react"
 
+interface StyledButtonProps{
+    children: ReactNode
+}
 
-const StyledButton = ({ children }) => {
+const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
 
     const StyledButton = styled("div")(() => ({
         width: '100%',
@@ -23,7 +27,7 @@ const StyledButton = ({ children }) => {
                 {children}
             </StyledButton>
 
-            
+
         </>
     )
 }
