@@ -15,7 +15,7 @@ const Hero = () => {
         border: '2px solid ',
         borderColor: theme.palette.primary.main,
         borderRadius: "50%",
-    }))clearInterval
+    }))
 
     return (
         <>
