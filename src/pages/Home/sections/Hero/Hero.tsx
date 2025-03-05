@@ -3,45 +3,51 @@ import avatar from "../../../../assets/images/avatar.png";
 import { Container, styled, Typography } from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload'; import EmailIcon from '@mui/icons-material/Email';
+import theme from "../../../../theme";
+import StyledButton from "../../../../components/StyledButton/StyledButton";
 const Hero = () => {
     const StyledHero = styled("div")(() => ({
-        backgroundColor: "black",
+        backgroundColor: theme.palette.primary.dark,
         height: "100vh"
     }))
     const StyledImage = styled("img")(() => ({
         width: "100%",
+        border: '2px solid ',
+        borderColor: theme.palette.primary.main,
         borderRadius: "50%",
-
-
-    }))
+    }))clearInterval
 
     return (
         <>
             <StyledHero>
                 <Container maxWidth='lg'>
-                    <Grid container display={'flex'} justifyContent={'center'} alignItems={'center'}>
+                    <Grid container direction={'row'} display={'flex'} justifyContent={'center'} alignItems={'center'} spacing={8}>
 
                         <Grid size={{ xs: 12, md: 4, xl: 4 }}>
                             <StyledImage src={avatar} alt="" />
                         </Grid>
+                        <Grid container display={'flex'} justifyContent={'center'} alignItems={'center'} spacing={8}>
 
-                        <Grid size={{ xs: 12, md: 8, xl: 8 }}>
-                            <Typography color="primary" variant="h1" textAlign={'center'}> Matheus Fernandes </Typography>
-                            <Typography color="primary" variant="h3" textAlign={'center'}> Desenvolvedor de sistemas </Typography>
+                            <Grid size={{ xs: 12, md: 8, xl: 8 }} >
+                                <Typography color="primary" variant="h1" textAlign={'start'}> MATHEUS FERNANDES </Typography>
+                                <Typography color="secondary" variant="h3" textAlign={'start'}> Desenvolvedor de websites, interfaces do usuário e designer digital </Typography>
 
-                            <Grid container display={'flex'} justifyContent={'center'}>
-                                <Grid size={{ xs: 12, md: 4, xl: 4 }} display={'flex'} justifyContent={'center'}>
-                                    <button>
-                                        <CloudDownloadIcon />
-                                        Download CV
-                                    </button>
-                                </Grid>
+                                <Grid container display={'flex'} justifyContent={'center'}>
+                                    <Grid size={{ xs: 12, md: 4, xl: 4 }} display={'flex'} justifyContent={'center'}>
+                                        <StyledButton>
+                                            <CloudDownloadIcon />
+                                            Download CV
+                                        </StyledButton>
+                                    </Grid>
 
-                                <Grid size={{ xs: 12, md: 4, xl: 4 }} display={'flex'} justifyContent={'center'}>
-                                    <button >
-                                        <EmailIcon></EmailIcon>
-                                        Contact me
-                                    </button>
+                                    <Grid size={{ xs: 12, md: 4, xl: 4 }} display={'flex'} justifyContent={'center'}>
+                                        <StyledButton>
+                                            <EmailIcon></EmailIcon>
+                                            Contact me
+                                        </StyledButton>
+
+
+                                    </Grid>
                                 </Grid>
 
 
@@ -51,7 +57,7 @@ const Hero = () => {
                         </Grid>
                     </Grid>
 
-                    
+
                 </Container>
             </StyledHero >
 
