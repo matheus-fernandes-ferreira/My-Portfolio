@@ -12,7 +12,7 @@ let theme = createTheme({
 
     },
     typography: {
-        fontFamily: "Poppins",
+        fontFamily: "Open Sans, sans-serif",
         h1: {
             fontSize: "3.7rem", // Define o tamanho da fonte para h1
             fontWeight: 600, // Define a espessura

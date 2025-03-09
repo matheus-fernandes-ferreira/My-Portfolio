@@ -10,12 +10,13 @@ const Hero = () => {
     return (
         <Box
             sx={{
-                position: "relative",
+                position: "relative", // Alterado para relative
                 minHeight: "100vh",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 overflow: "hidden",
+                paddingTop: { xs: "56px", sm: "64px" }, // Adiciona padding-top para respeitar o AppBar
             }}
         >
             {/* AnimatedBackground como plano de fundo */}
@@ -40,11 +41,11 @@ const Hero = () => {
                     </Grid>
 
                     {/* Coluna do Texto e Botões */}
-                    <Grid size={{ xs: 12, md: 7 }}>
-                        <Typography color="primary" variant="h1" textAlign="center">
+                    <Grid size={{ xs: 12, md: 7 }} spacing={12}>
+                        <Typography color="primary" variant="h1" textAlign="center" mb={5}>
                             MATHEUS FERNANDES
                         </Typography>
-                        <Typography color="secondary" variant="h3" textAlign="center">
+                        <Typography color="secondary" variant="h3" textAlign="center" mb={5}>
                             Desenvolvedor de websites, interfaces do usuário e designer digital
                         </Typography>
 
