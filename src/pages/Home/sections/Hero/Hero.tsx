@@ -5,6 +5,7 @@ import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import EmailIcon from "@mui/icons-material/Email";
 import AnimatedBackground from "../../../../components/AnimatedBackground/AnimatedBackground";
 import avatar from "../../../../assets/images/avatar.png";
+import theme from "../../../../theme";
 
 const Hero = () => {
     return (
@@ -31,10 +32,10 @@ const Hero = () => {
                             src={avatar}
                             alt="Avatar"
                             style={{
-                                width: "80%",
+                                width: "100%",
                                 maxWidth: "400px",
-                                border: "2px solid",
-                                borderColor: "primary.main",
+                                border: "3px solid",
+                                borderColor: `${theme.palette.primary.main}`,
                                 borderRadius: "50%",
                             }}
                         />
@@ -52,14 +53,14 @@ const Hero = () => {
                         {/* Grid dos Botões */}
                         <Grid container spacing={2} mt={2}>
                             <Grid size={{ xs: 12, sm: 6 }} display="flex" justifyContent="center">
-                                <StyledButton>
-                                    <CloudDownloadIcon />
+                            <StyledButton onclick={ () => console.log('Download')}>
+                            <CloudDownloadIcon />
                                     <Typography>Download CV</Typography>
                                 </StyledButton>
                             </Grid>
 
                             <Grid size={{ xs: 12, sm: 6 }} display="flex" justifyContent="center">
-                                <StyledButton>
+                                <StyledButton onclick={ () => console.log('Contact me')}>
                                     <EmailIcon />
                                     <Typography>Contact me</Typography>
                                 </StyledButton>

@@ -208,7 +208,7 @@ const AnimatedBackground = () => {
                 left: 0,
                 width: "100%",
                 height: "100%",
-                backgroundImage: "url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg')", // Imagem de fundo
+                backgroundImage: "url('https://img.freepik.com/vetores-gratis/fundo-escuro-de-baixo-poli_1048-7971.jpg?t=st=1741557671~exp=1741561271~hmac=b024a6d2d822ebb93f8a5057cfd8273ddf7fb2da2a189051c2fc87ae9569dfa6&w=996')", // Imagem de fundo
                 backgroundSize: "cover", // Cobrir toda a área
                 backgroundPosition: "center", // Centralizar a imagem
                 zIndex: 1,
