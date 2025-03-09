@@ -1,4 +1,4 @@
-import { colors, styled } from "@mui/material"
+import { styled } from "@mui/material"
 import theme from "../../theme"
 import { ReactNode } from "react"
 
@@ -18,7 +18,11 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
         '&:hover': {
             backgroundColor: theme.palette.secondary.dark,
             color: theme.palette.secondary.contrastText,
-        }
+        },
+        display: 'inline-flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '10px'
     }))
 
     return (

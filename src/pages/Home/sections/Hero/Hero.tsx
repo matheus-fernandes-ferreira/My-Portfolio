@@ -1,76 +1,74 @@
-import avatar from "../../../../assets/images/avatar.png";
-import theme from "../../../../theme";
+import { Box, Container, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 import StyledButton from "../../../../components/StyledButton/StyledButton";
-
-import { Container, styled, Typography } from "@mui/material";
-import Grid from '@mui/material/Grid2';
-
-// icons
-import CloudDownloadIcon from '@mui/icons-material/CloudDownload'; 
-import EmailIcon from '@mui/icons-material/Email';
-
-
+import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
+import EmailIcon from "@mui/icons-material/Email";
+import AnimatedBackground from "../../../../components/AnimatedBackground/AnimatedBackground";
+import avatar from "../../../../assets/images/avatar.png";
 
 const Hero = () => {
-    const StyledHero = styled("div")(() => ({
-        backgroundColor: theme.palette.primary.dark,
-        height: "100vh"
-    }))
-    const StyledImage = styled("img")(() => ({
-        width: "100%",
-        border: '2px solid ',
-        borderColor: theme.palette.primary.main,
-        borderRadius: "50%",
-    }))
-
     return (
-        <>
-            <StyledHero>
-                <Container maxWidth='lg'>
-                    <Grid container direction={'row'} display={'flex'} justifyContent={'center'} alignItems={'center'} spacing={8}>
+        <Box
+            sx={{
+                position: "relative",
+                minHeight: "100vh",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                overflow: "hidden",
+            }}
+        >
+            {/* AnimatedBackground como plano de fundo */}
+            <AnimatedBackground />
 
-                        <Grid size={{ xs: 12, md: 4, xl: 4 }}>
-                            <StyledImage src={avatar} alt="" />
-                        </Grid>
-                        <Grid container display={'flex'} justifyContent={'center'} alignItems={'center'} spacing={8}>
-
-                            <Grid size={{ xs: 12, md: 8, xl: 8 }} >
-                                <Typography color="primary" variant="h1" textAlign={'start'}> MATHEUS FERNANDES </Typography>
-                                <Typography color="secondary" variant="h3" textAlign={'start'}> Desenvolvedor de websites, interfaces do usuário e designer digital </Typography>
-
-                                <Grid container display={'flex'} justifyContent={'center'}>
-                                    <Grid size={{ xs: 12, md: 4, xl: 4 }} display={'flex'} justifyContent={'center'}>
-                                        <StyledButton>
-                                            <CloudDownloadIcon />
-                                            Download CV
-                                        </StyledButton>
-                                    </Grid>
-
-                                    <Grid size={{ xs: 12, md: 4, xl: 4 }} display={'flex'} justifyContent={'center'}>
-                                        <StyledButton>
-                                            <EmailIcon></EmailIcon>
-                                            Contact me
-                                        </StyledButton>
-
-
-                                    </Grid>
-                                </Grid>
-
-
-                            </Grid>
-
-
-                        </Grid>
+            {/* Conteúdo do Hero */}
+            <Container maxWidth="lg" sx={{ position: "relative", zIndex: 2 }}>
+                <Grid container spacing={4} alignItems="center" justifyContent="center">
+                    {/* Coluna da Imagem */}
+                    <Grid size={{ xs: 12, md: 5 }} display="flex" justifyContent="center">
+                        <img
+                            src={avatar}
+                            alt="Avatar"
+                            style={{
+                                width: "80%",
+                                maxWidth: "400px",
+                                border: "2px solid",
+                                borderColor: "primary.main",
+                                borderRadius: "50%",
+                            }}
+                        />
                     </Grid>
 
+                    {/* Coluna do Texto e Botões */}
+                    <Grid size={{ xs: 12, md: 7 }}>
+                        <Typography color="primary" variant="h1" textAlign="center">
+                            MATHEUS FERNANDES
+                        </Typography>
+                        <Typography color="secondary" variant="h3" textAlign="center">
+                            Desenvolvedor de websites, interfaces do usuário e designer digital
+                        </Typography>
 
-                </Container>
-            </StyledHero >
+                        {/* Grid dos Botões */}
+                        <Grid container spacing={2} mt={2}>
+                            <Grid size={{ xs: 12, sm: 6 }} display="flex" justifyContent="center">
+                                <StyledButton>
+                                    <CloudDownloadIcon />
+                                    <Typography>Download CV</Typography>
+                                </StyledButton>
+                            </Grid>
 
+                            <Grid size={{ xs: 12, sm: 6 }} display="flex" justifyContent="center">
+                                <StyledButton>
+                                    <EmailIcon />
+                                    <Typography>Contact me</Typography>
+                                </StyledButton>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Container>
+        </Box>
+    );
+};
 
-
-        </>
-    )
-}
-
-export default Hero
+export default Hero;
