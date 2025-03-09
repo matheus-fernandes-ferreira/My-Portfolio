@@ -14,7 +14,7 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
         backgroundColor: 'transparent',
         border: `1px solid ${theme.palette.secondary.main}`,
         borderRadius: '5px',
-        color: theme.palette.primary.main,
+        color: theme.palette.secondary.main,
         '&:hover': {
             backgroundColor: theme.palette.secondary.dark,
             color: theme.palette.secondary.contrastText,
