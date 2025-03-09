@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap"; // Importando GSAP para animações
+import backgroundImage from "../../assets/images/fundo.jpg"; // Importando a imagem local
 
 const AnimatedBackground = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -208,7 +209,7 @@ const AnimatedBackground = () => {
                 left: 0,
                 width: "100%",
                 height: "100%",
-                backgroundImage: "url('https://img.freepik.com/vetores-gratis/fundo-escuro-de-baixo-poli_1048-7971.jpg?t=st=1741557671~exp=1741561271~hmac=b024a6d2d822ebb93f8a5057cfd8273ddf7fb2da2a189051c2fc87ae9569dfa6&w=996')", // Imagem de fundo
+                backgroundImage: `url(${backgroundImage})`, // Usando a imagem local
                 backgroundSize: "cover", // Cobrir toda a área
                 backgroundPosition: "center", // Centralizar a imagem
                 zIndex: 1,
