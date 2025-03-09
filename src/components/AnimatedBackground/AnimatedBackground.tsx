@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap"; // Importando GSAP para animações
 
 const AnimatedBackground = () => {
@@ -108,9 +108,9 @@ const AnimatedBackground = () => {
         };
 
         // Função para calcular a distância entre dois pontos
-const getDistance = (p1: { x: number; y: number }, p2: { x: number; y: number }) => {
-    return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
-};
+        const getDistance = (p1: { x: number; y: number }, p2: { x: number; y: number }) => {
+            return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
+        };
 
         // Função para animar os pontos
         const animate = () => {
@@ -201,17 +201,31 @@ const getDistance = (p1: { x: number; y: number }, p2: { x: number; y: number })
     }, []);
 
     return (
-        <canvas
-            ref={canvasRef}
+        <div
             style={{
                 position: "absolute",
                 top: 0,
                 left: 0,
                 width: "100%",
                 height: "100%",
+                backgroundImage: "url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg')", // Imagem de fundo
+                backgroundSize: "cover", // Cobrir toda a área
+                backgroundPosition: "center", // Centralizar a imagem
                 zIndex: 1,
             }}
-        />
+        >
+            <canvas
+                ref={canvasRef}
+                style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    zIndex: 2,
+                }}
+            />
+        </div>
     );
 };
 
