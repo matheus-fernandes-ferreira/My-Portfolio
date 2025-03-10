@@ -8,10 +8,14 @@ Bem-vindo ao meu portfólio pessoal! Este projeto é uma representação digital
 
 Este portfólio foi desenvolvido com as seguintes tecnologias:
 
-- **React**: Para construir uma interface de usuário dinâmica e responsiva.
-- **TypeScript**: Para garantir um código seguro e escalável.
-- **Material-UI (MUI)**: Para componentes estilizados e design consistente.
-- **GSAP**: Para animações suaves e interativas.
+- ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) Para construir uma interface de usuário dinâmica e responsiva.
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) Para garantir um código seguro e escalável.
+
+![Material-UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=mui&logoColor=white) Para componentes estilizados e design consistente.
+
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white) Para animações suaves e interativas.
+
 - **Canvas API**: Para efeitos visuais personalizados.
 
 O objetivo deste projeto é não apenas exibir minhas habilidades técnicas, mas também criar uma experiência memorável para quem visita o site.
@@ -43,31 +47,30 @@ Siga os passos abaixo para rodar o projeto localmente:
 
 1. **Clone o repositório**:
 
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-```.
+   ```bash
+   git clone https://github.com/matheus-fernandes-ferreira/My-Portfolio.git
+   ```
 
-2. **Instale as dependências**:
+2. **Instale as dependências**
 
-```bash
-cd seu-repositorio
-npm install
-```.
+   ```bash
+      cd seu-repositorio
+      npm install
+   ```
 
 3. **Inicie o servidor de desenvolvimento**:
 
-```bash
-npm run dev
-```.
+   ```bash
+   npm run dev
+   ```
 
 4. **Acesse o projeto:**:
-Abra o navegador e visite http://localhost:3000.
-
+Abra o navegador e visite <http://localhost:3000>.
 
 📂 Estrutura do Projeto
 Aqui está uma visão geral da estrutura do projeto:
 
-```text
+```bash
 src/
 ├── assets/           # Imagens, ícones e outros recursos estáticos
 ├── components/       # Componentes reutilizáveis
@@ -75,7 +78,7 @@ src/
 ├── styles/           # Estilos globais e temas
 ├── utils/            # Funções utilitárias
 └── App.tsx           # Componente principal
-```.
+```
 
 🤝 Contribuições
 Contribuições são bem-vindas! Se você tiver sugestões, correções ou novas ideias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
