@@ -1,54 +1,48 @@
-# React + TypeScript + Vite
+# 🌟 Meu Portfólio Pessoal 🌟
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao meu portfólio pessoal! Este projeto é uma representação digital da minha jornada como desenvolvedor, designer e entusiasta de tecnologia. Aqui, você encontrará uma combinação de design moderno, animações interativas e uma experiência de usuário envolvente.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Sobre o Projeto
 
-## Expanding the ESLint configuration
+Este portfólio foi desenvolvido com as seguintes tecnologias:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**: Para construir uma interface de usuário dinâmica e responsiva.
+- **TypeScript**: Para garantir um código seguro e escalável.
+- **Material-UI (MUI)**: Para componentes estilizados e design consistente.
+- **GSAP**: Para animações suaves e interativas.
+- **Canvas API**: Para efeitos visuais personalizados.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+O objetivo deste projeto é não apenas exibir minhas habilidades técnicas, mas também criar uma experiência memorável para quem visita o site.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ✨ Funcionalidades
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Design Responsivo**: Adapta-se perfeitamente a qualquer dispositivo, desde desktops até smartphones.
+- **Animação de Partículas**: Um fundo dinâmico e interativo que reage ao movimento do mouse.
+- **Seções Organizadas**: Apresentação clara das minhas habilidades, projetos e informações de contato.
+- **Botões Interativos**: Download do currículo e opção de contato direto.
+
+---
+
+## 🎨 Design e Estilo
+
+O design do portfólio foi cuidadosamente planejado para transmitir profissionalismo e criatividade. As cores, tipografia e espaçamento foram escolhidos para criar uma experiência visual agradável e moderna.
+
+- **Cores**: Uma paleta de cores sóbria com tons de preto, branco e azul.
+- **Tipografia**: Fontes modernas e legíveis para uma leitura confortável.
+- **Efeitos Visuais**: Animações suaves e transições para uma experiência fluida.
+
+---
+
+## 🛠️ Como Executar o Projeto
+
+Siga os passos abaixo para rodar o projeto localmente:
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+
+   
