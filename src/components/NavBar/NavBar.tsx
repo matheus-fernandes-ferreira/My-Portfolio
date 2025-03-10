@@ -14,9 +14,9 @@ export default function ButtonAppBar() {
             <AppBar position="absolute" sx={{ backgroundColor: (theme) => theme.palette.primary.dark }} 
             >
                 <StyledToolBar>
-                    <MenuItem> About </MenuItem>
-                    <MenuItem> Skills </MenuItem>
-                    <MenuItem> Projects </MenuItem>
+                    <MenuItem> Sobre mim </MenuItem>
+                    <MenuItem> Habilidades </MenuItem>
+                    <MenuItem> Projetos </MenuItem>
                 </StyledToolBar>
             </AppBar>
         </Box>

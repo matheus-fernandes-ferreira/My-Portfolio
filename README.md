@@ -42,7 +42,37 @@ O design do portfólio foi cuidadosamente planejado para transmitir profissional
 Siga os passos abaixo para rodar o projeto localmente:
 
 1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+```bash
+         git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+   1. **Instale as dependências**:
+      ```bash
+   cd seu-repositorio
+   npm install
+   ```
 
-   
+
+Acesse o projeto:
+Abra o navegador e visite https://matheusfernandes.netlify.app/.
+
+📂 Estrutura do Projeto
+Aqui está uma visão geral da estrutura do projeto:
+
+src/
+├── assets/           # Imagens, ícones e outros recursos estáticos
+├── components/       # Componentes reutilizáveis
+├── pages/            # Páginas do site
+├── styles/           # Estilos globais e temas
+├── utils/            # Funções utilitárias
+└── App.tsx           # Componente principal
+
+🤝 Contribuições
+Contribuições são bem-vindas! Se você tiver sugestões, correções ou novas ideias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+📄 Licença
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+🌐 Visite o Projeto
+Confira o projeto em ação: https://matheusfernandes.netlify.app/
+
+Feito com ❤️ por Matheus Fernandes Ferreira
