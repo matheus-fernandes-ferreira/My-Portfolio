@@ -17,7 +17,7 @@ const Hero = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 overflow: "hidden",
-                paddingTop: { xs: "56px", sm: "64px" }, // Adiciona padding-top para respeitar o AppBar
+                paddingTop: { xs: "60px", sm: "60px" }, // Adiciona padding-top para respeitar o AppBar
             }}
         >
             {/* AnimatedBackground como plano de fundo */}
@@ -47,7 +47,7 @@ const Hero = () => {
                             MATHEUS FERNANDES
                         </Typography>
                         <Typography color="secondary" variant="h3" textAlign="center" mb={5}>
-                            Desenvolvedor de websites, interfaces do usuário e designer digital
+                            Desenvolvedor de websites, interfaces do usuário e designer digital.
                         </Typography>
 
                         {/* Grid dos Botões */}
