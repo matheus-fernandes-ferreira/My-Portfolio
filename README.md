@@ -65,7 +65,10 @@ Siga os passos abaixo para rodar o projeto localmente:
 4. **Acesse o projeto:**:
 Abra o navegador e visite <http://localhost:3000>.
 
-📂 Estrutura do Projeto
+---
+
+## 📂 Estrutura do Projeto
+
 Aqui está uma visão geral da estrutura do projeto:
 
 ```bash
@@ -78,13 +81,22 @@ src/
 └── App.tsx           # Componente principal
 ```
 
-🤝 Contribuições
+---
+
+## 🤝 Contribuições
+
 Contribuições são bem-vindas! Se você tiver sugestões, correções ou novas ideias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-📄 Licença
+---
+
+## 📄 Licença
+
 Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-🌐 Visite o Projeto
+---
+
+## 🌐 Visite o Projeto
+
 Confira o projeto em ação: <https://matheusfernandes.netlify.app/>
 
 Feito com ❤️ por Matheus Fernandes Ferreira
