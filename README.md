@@ -2,6 +2,8 @@
 
 Bem-vindo ao meu portfólio pessoal! Este projeto é uma representação digital da minha jornada como desenvolvedor, designer e entusiasta de tecnologia. Aqui, você encontrará uma combinação de design moderno, animações interativas e uma experiência de usuário envolvente.
 
+Visite <https://matheusfernandes.netlify.app/>
+
 ---
 
 ## 🚀 Sobre o Projeto
