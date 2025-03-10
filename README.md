@@ -8,13 +8,13 @@ Bem-vindo ao meu portfólio pessoal! Este projeto é uma representação digital
 
 Este portfólio foi desenvolvido com as seguintes tecnologias:
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB&logoWidth=20&labelWidth=100) Para construir uma interface de usuário dinâmica e responsiva.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB&logoWidth=20&) Para construir uma interface de usuário dinâmica e responsiva.
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white&logoWidth=20&labelWidth=100) Para garantir um código seguro e escalável.
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) Para garantir um código seguro e escalável.
 
-![Material-UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=mui&logoColor=white&logoWidth=20&labelWidth=100) Para componentes estilizados e design consistente.
+![Material-UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=mui&logoColor=white) Para componentes estilizados e design consistente.
 
-![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white&logoWidth=20&labelWidth=100) Para animações suaves e interativas.
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white) Para animações suaves e interativas.
 
 O objetivo deste projeto é não apenas exibir minhas habilidades técnicas, mas também criar uma experiência memorável para quem visita o site.
 
