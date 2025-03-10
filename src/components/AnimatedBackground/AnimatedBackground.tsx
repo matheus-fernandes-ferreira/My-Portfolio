@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap"; // Importando GSAP para animações
-import backgroundImage from "../../assets/images/fundo.jpg"; // Importando a imagem local
+import backgroundImage from "../../assets/images/fundo.png"; // Importando a imagem local
 
 const AnimatedBackground = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
